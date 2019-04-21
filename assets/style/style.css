@@ -22,6 +22,7 @@ body{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color:black;
 }
 .navbar{
 	color: orange;
@@ -31,9 +32,9 @@ body{
 		 
 .chalkboard{
 	/* height: auto; */
-	/* background-image: url('https://files.slack.com/files-pri/TEF39F7A5-FHLERV1AR/download/4305843.jpg'); */
-	/* background-color: rgba(0,0,0,0.9) */
-	background-color: rgba(129, 129, 129, 0.2);
+ background-image: url('https://files.slack.com/files-pri/TEF39F7A5-FHLERV1AR/download/4305843.jpg');
+  background-color: rgba(0,0,0,0.9);
+	/* background-color: rgba(129, 129, 129, 0.2); */
 
 }
 #title{
@@ -45,6 +46,7 @@ body{
 	margin: auto;
 	color: orangered;
 	text-align: center;
+	font-size:2em;
 	
 }
 #for-apples{
@@ -94,9 +96,8 @@ h1{
 
 /*  scroll container for recipes  */
 #reciepe_container{
-	height:700px;
-	overflow:auto;
-	text-align: center;		}
+	text-align: center;	
+	}
 
 .card{
 	display: inline-block;
