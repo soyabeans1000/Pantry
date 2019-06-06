@@ -29,4 +29,4 @@ Choose the location that sounds good to eat at.
 * **Summer Basehart** - [summerbasehart](https://github.com/summerbasehart)
 * **Mike Anderson** - [mjanders6](https://github.com/mjanders6)
 
-<img src="https://soyabeans1000.github.io/images/Portfolio/pantry.jpg width="800">
+<img src="https://soyabeans1000.github.io/images/Portfolio/pantry.jpg" width="800">
