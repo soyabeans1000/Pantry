@@ -113,6 +113,15 @@ h1{
 	color: white;
 } 
 
+.cta {
+	position: relative;
+	top: 35%;
+	transform: translateY(-35%);
+	background: rgba(0, 0, 0, 0.8);
+	padding: 5rem;
+	color:white;
+}
+
 
 @media only screen and (max-width: 640px) {
 
