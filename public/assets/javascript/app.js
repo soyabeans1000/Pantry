@@ -75,4 +75,3 @@ document.addEventListener('click', e => {
     document.querySelector('#reciepe_container').style.display = 'none'
   }
 })
-

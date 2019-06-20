@@ -38,7 +38,7 @@
 <script type="text/javascript">
   // FirebaseUI config.
   var uiConfig = {
-    signInSuccessUrl: 'signin.html',
+    signInSuccessUrl: 'index.html',
     signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -46,7 +46,7 @@
     // tosUrl and privacyPolicyUrl accept either url string or a callback
     // function.
     // Terms of service url/callback.
-    tosUrl: 'https://www.google.com',
+    tosUrl: 'index.html',
     // Privacy policy url/callback.
     privacyPolicyUrl: function() {
       window.location.assign('https://www.google.com');
