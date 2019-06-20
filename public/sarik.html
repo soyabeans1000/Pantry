@@ -64,9 +64,17 @@ let auth = firebase.auth
 
 auth().onAuthStateChanged(user => {
 
-  console.log(user)
+  if (user){
+document.querySelector('#login').style.display = 'none'
+document.querySelector('#signout').style.display = 'block'
+     }
 
+     else {
 
+        document.querySelector('#login').style.display = 'block'
+document.querySelector('#signout').style.display = 'none'
+       
+     }
 })
 
 
@@ -93,8 +101,10 @@ auth().onAuthStateChanged(user => {
                     <a class="nav-link" href="restarauntfinder.html">Too Lazy to cook?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link signInUp" href="#">Sign
+                    <a class="nav-link signInUp" href="#" id="login">Sign
                         In</a>
+                        <a class="nav-link signInUp" href="#" id="signOut">Sign
+                                Out</a>
                 </li>
                
             </ul>
