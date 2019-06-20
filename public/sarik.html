@@ -65,13 +65,13 @@ let auth = firebase.auth
 auth().onAuthStateChanged(user => {
 
   if (user){
-document.querySelector('#login').style.display = 'none'
+document.querySelector('firebaseui-auth-container').style.display = 'none'
 document.querySelector('#signout').style.display = 'block'
      }
 
      else {
 
-        document.querySelector('#login').style.display = 'block'
+        document.querySelector('#firebaseui-auth-container').style.display = 'block'
 document.querySelector('#signOut').style.display = 'none'
        
      }
