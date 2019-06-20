@@ -77,6 +77,13 @@ document.querySelector('#signOut').style.display = 'none'
      }
 })
 
+document.querySelector('#signOut').addEventListener('click', e => {
+auth.signOut()
+window.location.reload()
+
+})
+
+
 
 </script>
 
