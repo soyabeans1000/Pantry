@@ -16,32 +16,44 @@
     <link href="assets/style/style.css" rel="stylesheet">
 
 
-    <!--Is this even working???--> 
 
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBGlJ6Uu9Y8IUL99GXkXOaeEQGB1rDNtbM",
-    authDomain: "sarika-a2ba6.firebaseapp.com",
-    databaseURL: "https://sarika-a2ba6.firebaseio.com",
-    projectId: "sarika-a2ba6",
-    storageBucket: "sarika-a2ba6.appspot.com",
-    messagingSenderId: "351732953732"
-  };
-  firebase.initializeApp(config);
-</script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+
+
+    
+
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
     <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDY1T2_rchlcQe6qMDiQ8lWKh6S6UWZA_w",
+    authDomain: "pantry-67658.firebaseapp.com",
+    databaseURL: "https://pantry-67658.firebaseio.com",
+    projectId: "pantry-67658",
+    storageBucket: "",
+    messagingSenderId: "1008324261321",
+    appId: "1:1008324261321:web:d81f4e365443a9ab"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
 
 <script type="text/javascript">
-
-let auth = firebase.auth
   // FirebaseUI config.
   var uiConfig = {
-    signInSuccessUrl: 'index.html',
+    signInSuccessUrl: 'signin.html',
     signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -49,7 +61,7 @@ let auth = firebase.auth
     // tosUrl and privacyPolicyUrl accept either url string or a callback
     // function.
     // Terms of service url/callback.
-    tosUrl: 'index.html',
+    tosUrl: 'https://www.google.com',
     // Privacy policy url/callback.
     privacyPolicyUrl: function() {
       window.location.assign('https://www.google.com');
@@ -59,17 +71,7 @@ let auth = firebase.auth
   // Initialize the FirebaseUI Widget using Firebase.
   var ui = new firebaseui.auth.AuthUI(firebase.auth());
   // The start method will wait until the DOM is loaded.
-  ui.start('#firebaseui-auth-container', uiConfig)
-
-
-auth().onAuthStateChanged(user => {
-
-  console.log(user)
-
-
-})
-
-
+  ui.start('#firebaseui-auth-container', uiConfig);
 </script>
 
 </head>
@@ -109,18 +111,7 @@ auth().onAuthStateChanged(user => {
         <div id="firebaseui-auth-container"></div>
     </div>
 
-    <!-- <div class="container">
-        <br>
-         Jumbotron 
-        <div class="jumbotron sign_up_box">
-          <h1>Welcome to My Awesome App</h1>
-          <div id="firebaseui-auth-container"></div-->
-            <!--end of Jumbotron-->
-        <!----/div-->
-        
-        <!--end of Container-->
-    <!--/div> -->
-
+    
 
 
     <script src="assets/javascript/app.js"></script>

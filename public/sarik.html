@@ -14,28 +14,36 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/style/style.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 
 
-    <!--Is this even working???--> 
+    Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
+
+
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
 
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBGlJ6Uu9Y8IUL99GXkXOaeEQGB1rDNtbM",
-    authDomain: "sarika-a2ba6.firebaseapp.com",
-    databaseURL: "https://sarika-a2ba6.firebaseio.com",
-    projectId: "sarika-a2ba6",
-    storageBucket: "sarika-a2ba6.appspot.com",
-    messagingSenderId: "351732953732"
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDWyy2149PYyoU8ktDFLiObGj1qivony1g",
+    authDomain: "learning-1555129024240.firebaseapp.com",
+    databaseURL: "https://learning-1555129024240.firebaseio.com",
+    projectId: "learning-1555129024240",
+    storageBucket: "",
+    messagingSenderId: "153226810249",
+    appId: "1:153226810249:web:5c26613ddfd462b8"
   };
-  firebase.initializeApp(config);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-    <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
 
 
+    
 <script type="text/javascript">
 
 let auth = firebase.auth
@@ -147,6 +155,12 @@ window.location.reload()
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+   
+    <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
+
+
 
    
    
