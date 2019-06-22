@@ -39,10 +39,14 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+
   
+
+let auth = firebase.auth
   // FirebaseUI config.
   var uiConfig = {
-    signInSuccessUrl: 'signin.html',
+    signInSuccessUrl: 'recipeFinder.html',
     signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -50,7 +54,7 @@
     // tosUrl and privacyPolicyUrl accept either url string or a callback
     // function.
     // Terms of service url/callback.
-    tosUrl: 'https://www.google.com',
+    tosUrl: 'sarik.html',
     // Privacy policy url/callback.
     privacyPolicyUrl: function() {
       window.location.assign('https://www.google.com');
@@ -60,8 +64,36 @@
   // Initialize the FirebaseUI Widget using Firebase.
   var ui = new firebaseui.auth.AuthUI(firebase.auth());
   // The start method will wait until the DOM is loaded.
-  ui.start('#firebaseui-auth-container', uiConfig);
+  ui.start('#login', uiConfig)
+
+
+auth().onAuthStateChanged(user => {
+
+  if (user){
+document.querySelector('firebaseui-auth-container').style.display = 'none'
+document.querySelector('#signout').style.display = 'block'
+document.querySelector('#login').style.display = 'none'
+
+     }
+
+     else {
+
+        document.querySelector('#firebaseui-auth-container').style.display = 'block'
+document.querySelector('#signOut').style.display = 'none'
+       
+     }
+})
+
+document.querySelector('#signOut').addEventListener('click', e => {
+auth.signOut()
+window.location.reload()
+
+})
+
+
+
 </script>
+
 
 </head>
 
